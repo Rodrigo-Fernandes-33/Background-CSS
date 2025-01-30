@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem de Fundo</title>
+    <style>
+            /*Shorthand para background
+            
+            color > image > position > repeat > [size] (não funciona o cover mas é bom testar) > attachment
+            
+            exemplo:
+            background: black url (caminho da imagem) no-repeat cover fixed*/
+
+
+        body {
+            background-image: url('imagens/wallpaper004.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+     
+        div.quadrado{
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+        }
+
+
+        div#q1 {
+            background-color: aquamarine;
+
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, rgb(165, 253, 0), rgb(80, 1, 80),  rgb(80, 1, 80),  rgb(80, 1, 80));
+            padding: 10px;
+            text-align: justify;
+            height: 1400px;
+
+        }
+
+        div#q3 {
+            background-image: url(Imagens/pattern001.png);
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro fugit odio animi ipsum recusandae quaerat maxime odit vero? Commodi dignissimos suscipit incidunt error maiores dolorum perferendis eligendi quod cum consectetur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magnam magni eius minus totam, voluptatibus cum nulla. Illo, corrupti laudantium! Maiores fugit modi optio cupiditate! Amet blanditiis quod sunt </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem voluptatum cupiditate! Ab illo inventore, quis reprehenderit ullam odit beatae perspiciatis, excepturi molestiae autem a sint perferendis animi neque velit.</p>
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+
+    
+   
+</body>
+</html>
